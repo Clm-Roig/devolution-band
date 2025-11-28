@@ -40,9 +40,7 @@ const useHorizontalDivider = computed(() => width.value <= 1000)
           :key="index"
           :value="String(index)"
         >
-          <AccordionHeader style="font-size: 1.2rem">
-            {{ index + 1 }}. {{ track.title }}
-          </AccordionHeader>
+          <AccordionHeader> {{ index + 1 }}. {{ track.title }} </AccordionHeader>
           <AccordionContent v-if="track.lyrics">
             <p class="lyrics">{{ track.lyrics }}</p>
           </AccordionContent>
@@ -54,11 +52,14 @@ const useHorizontalDivider = computed(() => width.value <= 1000)
         <p v-for="(credit, index) in release.credits" :key="index">
           <b>{{ credit.label }}</b
           >:
-          <template v-if="credit.link">
+          <template v-if="credit.link && credit.linkLabel">
             {{ credit.content }} (<ExternalLink :href="credit.link">{{
               credit.linkLabel
             }}</ExternalLink
             >)
+          </template>
+          <template v-else-if="credit.link && !credit.linkLabel">
+            <ExternalLink :href="credit.link">{{ credit.content }}</ExternalLink>
           </template>
           <template v-else>{{ credit.content }}</template>
         </p>
