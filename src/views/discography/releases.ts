@@ -419,4 +419,108 @@ Chaos, chaos, cérébral !`,
       },
     ],
   },
+  {
+    id: 'perpetual-motion',
+    title: 'The Perpetual Motion (Demo)',
+    coverImage: 'the_perpetual_motion_cover.jpg',
+    year: 2015,
+    releaseInfo: 'Self-released',
+    tracks: [
+      {
+        title: 'Dawn',
+        lyrics: '[Instrumental]',
+      },
+      {
+        title: 'Reduced to Ash',
+        lyrics: `Hate in blood, wild spirit changed us in war machines.
+Ready to annihilate. For glory, hurt deadly.
+Relentless, merciless.
+No questions, smash these fools !
+
+Time to slaughter, to butcher war is art.
+Let your bloodlust lead your rage to their heart.
+
+We remain deaf to your laments, we crush all opposition forms.
+You are just a weak kind of life ahead a furious storm.
+Pray your wretched gods if you want, nothing can't stop the punishment
+Except your painful and slow death on this morbid lowland.
+
+Our wrath curves your flesh, crush your bones in thin dust.
+You’re nothing more than germs, for this earth you’re useless.
+Relentless, merciless.
+Just one rule, kill or die !
+
+Time to slaughter, to butcher war is art.
+Let your bloodlust lead your rage to their heart.
+
+Burn your mind, insane
+Leave your skin, die !
+
+Burn your mind, soulless
+Nil right now, reduced to ash !`,
+      },
+      {
+        title: 'Even the Most Powerful Ones Must Die',
+        lyrics: `Two tyrants fallen, one territory
+ Top of food chain, lords of misery
+ Blind faith destroyed them
+ Watch the world going to mayhem
+
+Fire and death reign in this place
+Nobody survived to the furious wrath
+
+Strike all creatures, crushed deeper
+For your stupid thirst of power
+You walk on the earth alone in dust
+The kingdom's ravaged by them
+Once again
+
+ After so many millenaries
+ Of evolution you’re now fallen
+ 'cause of your scorn wasted away
+ Your decay will come
+ From your flesh, from their tears, from their blood
+To a new age
+
+Extermination, the last wave of treat
+Empty the earth of wild beasts
+
+Every hope of life is swallowed
+It's time to let the silent spread
+Your future is reduced to ash
+Genocide, rebirth a new cycle begins...
+Right now!`,
+      },
+    ],
+    credits: [
+      {
+        label: 'Songs',
+        content: 'Clément Roig',
+      },
+      {
+        label: 'Lyrics',
+        content: 'Clément Roig and Steeve',
+      },
+      {
+        label: 'Guitar and drums programmation',
+        content: 'Clément Roig',
+      },
+      {
+        label: 'Bass',
+        content: 'Maelstrom',
+      },
+      {
+        label: 'Vocals',
+        content: 'Steeve',
+      },
+      {
+        label: 'Artwork',
+        content: 'Clément Roig',
+      },
+      {
+        label: 'Record / Mix / Master',
+        content: 'Clément Roig',
+      },
+    ],
+  },
 ]
