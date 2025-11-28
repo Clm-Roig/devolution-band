@@ -17,7 +17,7 @@ import { Card, Divider, Image } from 'primevue'
         style: 'padding: 0.75rem',
       },
     }"
-    style="background: var(--p-zinc-900)"
+    style="background: color-mix(in srgb, var(--p-surface-900) 50%, transparent)"
   >
     <template #header>
       <ImageWithCaption
@@ -32,8 +32,8 @@ import { Card, Divider, Image } from 'primevue'
         Devolution is deeply committed to revealing the darkest abominations that humans inflict on
         their own brothers and sisters and on the natural world that shelters them. There’s no need
         to invent stories or fables, just open your eyes and contemplate the raw truth of the world
-        that surrounds us. The band combines the violence and intensity of death metal with the
-        overwhelming epicness of melodic black metal to create a dynamic, fiery and impetuous sound.
+        around us. The band combines the violence and intensity of death metal with the overwhelming
+        epicness of melodic black metal to create a dynamic, fiery and impetuous sound.
       </p>
     </template>
   </Card>
@@ -97,7 +97,7 @@ import { Card, Divider, Image } from 'primevue'
   >
   <Divider />
 
-  <p style="font-style: italic; text-align: center">Fuck fascists, fuck NSBM.</p>
+  <p style="font-style: italic; margin-bottom: 0; text-align: center">Fuck fascists, fuck NSBM.</p>
 </template>
 
 <style scoped>
