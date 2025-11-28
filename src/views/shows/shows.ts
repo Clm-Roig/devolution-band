@@ -1,4 +1,3 @@
-// shows.ts
 export interface Show {
   id: string
   date: string

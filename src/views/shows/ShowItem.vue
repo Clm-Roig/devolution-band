@@ -1,4 +1,3 @@
-<!-- ShowItem.vue -->
 <script setup lang="ts">
 import type { Show } from './shows'
 import { Image } from 'primevue'
