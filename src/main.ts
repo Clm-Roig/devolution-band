@@ -1,6 +1,7 @@
 import 'normalize.css'
 import './assets/styles/main.css'
 import './assets/styles/caption.css'
+import 'primeicons/primeicons.css'
 
 import { createApp } from 'vue'
 import PrimeVue from 'primevue/config'
