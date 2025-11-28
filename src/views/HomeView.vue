@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ExternalLink from '@/components/ExternalLink.vue'
 import ImageWithCaption from '@/components/ImageWithCaption.vue'
 import { Card, Divider, Image } from 'primevue'
 </script>
@@ -23,7 +24,7 @@ import { Card, Divider, Image } from 'primevue'
         alt="Devolution on stage"
         src="line-up2.jpg"
         preview
-        caption="Picture by Melody Morana"
+        :caption="{ text: 'Picture by Melody Morana', href: 'https://melodymorana.fr' }"
       />
     </template>
     <template #content>
@@ -88,7 +89,12 @@ import { Card, Divider, Image } from 'primevue'
       <ImageWithCaption alt="MAD" src="MAD.jpg" width="100%" preview caption="MAD" />
     </li>
   </ul>
-  <p class="caption-style">All pictures by Melody Morana</p>
+  <ExternalLink
+    class="caption-style"
+    href="https://melodymorana.fr/"
+    style="display: block; margin: auto"
+    >All pictures by Melody Morana</ExternalLink
+  >
   <Divider />
 
   <p style="font-style: italic; text-align: center">Fuck fascists, fuck NSBM.</p>
