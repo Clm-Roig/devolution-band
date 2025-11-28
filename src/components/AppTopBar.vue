@@ -75,7 +75,7 @@ const items: CustomMenuItem[] = [
         :target="item.isExternal ? '_blank' : undefined"
         v-bind="props.action"
       >
-        <span>{{ item.label }}</span>
+        <span class="serif-font">{{ item.label }}</span>
       </a>
     </template>
   </Menubar>
