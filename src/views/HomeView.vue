@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import ImageWithCaption from '@/components/ImageWithCaption.vue'
-import { Card } from 'primevue'
-import { Image } from 'primevue'
+import { Card, Divider, Image } from 'primevue'
 </script>
 
 <template>
@@ -38,7 +37,7 @@ import { Image } from 'primevue'
     </template>
   </Card>
 
-  <hr />
+  <Divider />
 
   <div class="video-wrapper">
     <iframe
@@ -51,7 +50,7 @@ import { Image } from 'primevue'
     ></iframe>
   </div>
 
-  <hr />
+  <Divider />
 
   <p>
     The project was born in 2015 when Clément (ex-Antropofago, ex-Opprobre, ex-Sunnudagr) decided to
@@ -72,25 +71,25 @@ import { Image } from 'primevue'
   </p>
   <p>In 2024, a double single, “L’Absolution”, is released on streaming platforms.</p>
 
-  <hr />
+  <Divider />
 
   <Image alt="Devolution on stage" src="on_stage.jpg" width="100%" preview />
-  <ul style="display: flex; list-style-type: none; margin: 0; padding: 0">
-    <li style="flex-basis: 25%">
+  <ul class="line-up">
+    <li class="line-up-item">
       <ImageWithCaption alt="Clément" src="Clément.jpg" width="100%" preview caption="Clément" />
     </li>
-    <li style="flex-basis: 25%">
+    <li class="line-up-item">
       <ImageWithCaption alt="Antoine" src="Antoine.jpg" width="100%" preview caption="Antoine" />
     </li>
-    <li style="flex-basis: 25%">
+    <li class="line-up-item">
       <ImageWithCaption alt="Lunel" src="Lunel.jpg" width="100%" preview caption="Lunel" />
     </li>
-    <li style="flex-basis: 25%">
+    <li class="line-up-item">
       <ImageWithCaption alt="MAD" src="MAD.jpg" width="100%" preview caption="MAD" />
     </li>
   </ul>
   <p class="caption-style">All pictures by Melody Morana</p>
-  <hr />
+  <Divider />
 
   <p style="font-style: italic; text-align: center">Fuck fascists, fuck NSBM.</p>
 </template>
@@ -106,7 +105,19 @@ import { Image } from 'primevue'
   height: 100%;
   border: 0;
 }
-hr {
-  margin: 32px 0;
+
+.line-up {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  row-gap: 8px;
+  & > li {
+    flex-basis: 50%;
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+  }
 }
 </style>
