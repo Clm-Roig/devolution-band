@@ -1,4 +1,4 @@
-import DiscographyView from '@/views/DiscographyView.vue'
+import DiscographyView from '@/views/discography/DiscographyView.vue'
 import HomeView from '@/views/HomeView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -18,7 +18,7 @@ const router = createRouter({
       name: 'Discography',
       component: DiscographyView,
       meta: {
-        title: 'Discographie',
+        title: 'Discography',
       },
     },
   ],
