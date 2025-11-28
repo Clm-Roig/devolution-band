@@ -22,7 +22,7 @@ import { Image } from 'primevue'
     <template #header>
       <ImageWithCaption
         alt="Devolution on stage"
-        src="/line-up2.jpg"
+        src="line-up2.jpg"
         preview
         caption="Picture by Melody Morana"
       />
@@ -74,19 +74,19 @@ import { Image } from 'primevue'
 
   <hr />
 
-  <Image alt="Devolution on stage" src="/on_stage.jpg" width="100%" preview />
+  <Image alt="Devolution on stage" src="on_stage.jpg" width="100%" preview />
   <ul style="display: flex; list-style-type: none; margin: 0; padding: 0">
     <li style="flex-basis: 25%">
-      <ImageWithCaption alt="Clément" src="/Clément.jpg" width="100%" preview caption="Clément" />
+      <ImageWithCaption alt="Clément" src="Clément.jpg" width="100%" preview caption="Clément" />
     </li>
     <li style="flex-basis: 25%">
-      <ImageWithCaption alt="Antoine" src="/Antoine.jpg" width="100%" preview caption="Antoine" />
+      <ImageWithCaption alt="Antoine" src="Antoine.jpg" width="100%" preview caption="Antoine" />
     </li>
     <li style="flex-basis: 25%">
-      <ImageWithCaption alt="Lunel" src="/Lunel.jpg" width="100%" preview caption="Lunel" />
+      <ImageWithCaption alt="Lunel" src="Lunel.jpg" width="100%" preview caption="Lunel" />
     </li>
     <li style="flex-basis: 25%">
-      <ImageWithCaption alt="MAD" src="/MAD.jpg" width="100%" preview caption="MAD" />
+      <ImageWithCaption alt="MAD" src="MAD.jpg" width="100%" preview caption="MAD" />
     </li>
   </ul>
   <p class="caption-style">All pictures by Melody Morana</p>

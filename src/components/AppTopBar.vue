@@ -46,7 +46,7 @@ const items: CustomMenuItem[] = [
       width: 100%;
     "
   >
-    <Image src="/logo_devolution_white.png" alt="Devolution logo" height="150px" />
+    <Image src="logo_devolution_white.png" alt="Devolution logo" height="150px" />
   </div>
   <Menubar
     :model="items"
