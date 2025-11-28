@@ -14,7 +14,7 @@ import { Card, Divider, Image } from 'primevue'
   <Card
     :pt="{
       body: {
-        style: 'padding: 12px',
+        style: 'padding: 0.75rem',
       },
     }"
     style="background: var(--p-zinc-900)"
@@ -118,7 +118,7 @@ import { Card, Divider, Image } from 'primevue'
   list-style-type: none;
   margin: 0;
   padding: 0;
-  row-gap: 8px;
+  row-gap: 0.5rem;
   & > li {
     flex-basis: 50%;
     @media (max-width: 500px) {

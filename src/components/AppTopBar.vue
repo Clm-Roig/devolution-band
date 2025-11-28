@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Menubar from 'primevue/menubar'
-import Image from 'primevue/image'
 import type { MenuItem } from 'primevue/menuitem'
+import ResponsiveImage from './ResponsiveImage.vue'
 
 interface CustomMenuItem extends MenuItem {
   isExternal?: boolean
@@ -46,7 +46,7 @@ const items: CustomMenuItem[] = [
       width: 100%;
     "
   >
-    <Image src="logo_devolution_white.png" alt="Devolution logo" height="150px" />
+    <ResponsiveImage class="band-logo" src="logo_devolution_white.png" alt="Devolution logo" />
   </div>
   <Menubar
     :model="items"
@@ -80,3 +80,11 @@ const items: CustomMenuItem[] = [
     </template>
   </Menubar>
 </template>
+
+<style scoped>
+.band-logo {
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+</style>

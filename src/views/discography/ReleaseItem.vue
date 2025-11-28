@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Divider, Image } from 'primevue'
+import { Divider } from 'primevue'
 import Accordion from 'primevue/accordion'
 import AccordionPanel from 'primevue/accordionpanel'
 import AccordionHeader from 'primevue/accordionheader'
@@ -8,6 +8,7 @@ import { useWindowSize } from '@vueuse/core'
 import { computed } from 'vue'
 import ExternalLink from '@/components/ExternalLink.vue'
 import type { Release } from './releases'
+import ResponsiveImage from '@/components/ResponsiveImage.vue'
 
 defineProps<{
   release: Release
@@ -20,7 +21,7 @@ const useHorizontalDivider = computed(() => width.value <= 1000)
 <template>
   <div class="release-item">
     <div class="release-picture">
-      <Image :src="release.coverImage" :alt="`${release.title} artwork`" preview />
+      <ResponsiveImage :src="release.coverImage" :alt="`${release.title} artwork`" preview />
     </div>
 
     <Divider
@@ -86,12 +87,6 @@ const useHorizontalDivider = computed(() => width.value <= 1000)
     @media (max-width: 1000px) {
       width: 100%;
     }
-
-    :deep(img) {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
   }
 
   & > .release-info {
@@ -109,7 +104,7 @@ const useHorizontalDivider = computed(() => width.value <= 1000)
 
     & > .credits {
       & > p {
-        margin-bottom: 4px;
+        margin-bottom: 0.25rem;
         margin-top: 0;
       }
     }

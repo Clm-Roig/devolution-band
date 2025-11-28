@@ -24,7 +24,9 @@ const pageTitle = computed(() => route.meta.title as string)
         width: 100%;
       "
     >
-      <div style="background: rgba(0, 0, 0, 0.7); border-radius: 4px; padding: 32px; width: 100%">
+      <div
+        style="background: rgba(0, 0, 0, 0.7); border-radius: 0.25rem; padding: 2rem; width: 100%"
+      >
         <h1 v-if="!!pageTitle" style="text-align: center; margin-top: 0">{{ pageTitle }}</h1>
         <RouterView />
       </div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Image from 'primevue/image'
 import type { ImageProps } from 'primevue/image'
 import ExternalLink from './ExternalLink.vue'
+import ResponsiveImage from './ResponsiveImage.vue'
 
 export interface Props extends ImageProps {
   caption: string | { text: string; href?: string }
@@ -11,20 +11,12 @@ const props = withDefaults(defineProps<Props>(), {
   imageStyle: () => ({}),
 })
 
-const { caption, imageStyle, ...imageProps } = props
-
-// Fusionner les styles par défaut avec ceux fournis
-const mergedImageStyle = {
-  width: '100%',
-  height: 'auto',
-  display: 'block',
-  ...imageStyle,
-}
+const { caption, ...imageProps } = props
 </script>
 
 <template>
   <figure>
-    <Image v-bind="imageProps" :image-style="mergedImageStyle" />
+    <ResponsiveImage v-bind="imageProps" />
     <figcaption class="caption-style">
       <template v-if="typeof caption === 'string'">
         {{ caption }}

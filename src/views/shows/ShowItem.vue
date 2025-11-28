@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import type { Show } from './shows'
-import { Image } from 'primevue'
 
 defineProps<{
   show: Show
@@ -10,7 +10,13 @@ defineProps<{
 <template>
   <div class="show-item">
     <div class="show-poster">
-      <Image v-if="show.posterUrl" :src="show.posterUrl" alt="Poster" width="300" preview />
+      <ResponsiveImage
+        v-if="show.posterUrl"
+        :src="show.posterUrl"
+        alt="Poster"
+        width="350"
+        preview
+      />
     </div>
     <div class="show-info">
       <p class="show-day">{{ show.day }} {{ show.year }}</p>
