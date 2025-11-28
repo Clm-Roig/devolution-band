@@ -1,0 +1,49 @@
+:root {
+  --serif-font: 'Playfair Display', serif;
+  --sans-serif-font: 'Kedebideri', sans-serif;
+}
+
+.serif-font {
+  font-family: var(--serif-font);
+  letter-spacing: 0.15rem;
+}
+
+.sans-serif-font {
+  font-family: var(--sans-serif-font);
+}
+
+body {
+  font-family: var(--sans-serif-font);
+  min-height: 100vh;
+  position: relative; /* Required for pseudo-element positioning */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body::before {
+  content: '';
+  position: fixed; /* Covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Places the background behind the content */
+  filter: blur(4px) saturate(70%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif-font);
+}
+
+p {
+  line-height: 1.7rem;
+  font-size: large;
+}
