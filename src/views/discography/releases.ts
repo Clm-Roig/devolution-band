@@ -99,6 +99,10 @@ Hear the voices of devastation`,
     ],
     credits: [
       {
+        label: 'Interpreted by',
+        content: 'Clément (guitar & vocals), Antoine (guitar), MAD (drums), Lunel (bass)',
+      },
+      {
         label: 'Writting & lyrics',
         content: "Antoine (L'Absolution)",
       },
@@ -114,7 +118,7 @@ Hear the voices of devastation`,
         linkLabel: 'Silent Ruins Studio',
       },
       {
-        label: 'Guitare / bass / vocals recording, mix & master',
+        label: 'Guitar / bass / vocals recording, mix & master',
         content: 'Clément',
         link: 'https://onyx-studio.fr',
         linkLabel: 'Onyx Studio',
@@ -399,12 +403,16 @@ Chaos, chaos, cérébral !`,
     ],
     credits: [
       {
-        label: 'Guitar / Bass / Vocals / Drums programmation',
-        content: 'Clément Roig',
+        label: 'Interpreted by',
+        content: 'Clément (guitar, bass, vocals, drums programming)',
+      },
+      {
+        label: 'Writting & lyrics',
+        content: 'Clément',
       },
       {
         label: 'Record / Mix / Master',
-        content: 'Clément Roig',
+        content: 'Clément',
         link: 'https://onyx-studio.fr',
         linkLabel: 'Onyx Studio',
       },
@@ -496,32 +504,21 @@ Right now!`,
     ],
     credits: [
       {
-        label: 'Songs',
-        content: 'Clément Roig',
+        label: 'Interpreted by',
+        content: 'Clément (guitar, drums programming), Steeve (vocals), Maelstrom (bass)',
       },
       {
-        label: 'Lyrics',
-        content: 'Clément Roig and Steeve',
+        label: 'Writting',
+        content: 'Clément',
       },
+      { label: 'Lyrics', content: 'Clément & Steeve' },
       {
-        label: 'Guitar and drums programmation',
-        content: 'Clément Roig',
-      },
-      {
-        label: 'Bass',
-        content: 'Maelstrom',
-      },
-      {
-        label: 'Vocals',
-        content: 'Steeve',
+        label: 'Record / Mix / Master',
+        content: 'Clément',
       },
       {
         label: 'Artwork',
-        content: 'Clément Roig',
-      },
-      {
-        label: 'Record / Mix / Master',
-        content: 'Clément Roig',
+        content: 'Clément',
       },
     ],
   },
