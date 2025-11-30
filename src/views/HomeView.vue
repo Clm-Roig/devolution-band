@@ -59,22 +59,27 @@ import { Card, Divider, Image } from 'primevue'
 
   <p>
     The project was born in 2015 when Clément (ex-Antropofago, ex-Opprobre, ex-Sunnudagr) decided to
-    release a first old school demo, The Perpetual Motion. He then surrounded himself with Maelstrom
-    (Sunnudagr, ex-Opprobre) on bass and Steeve on vocals.
+    release a first old school demo,
+    <ExternalLink href="https://www.youtube.com/watch?v=3mD6pFnvNsA"
+      ><b>Perpetual Motion</b></ExternalLink
+    >. He then surrounded himself with Maelstrom (Sunnudagr, ex-Opprobre) on bass and Steeve on
+    vocals.
   </p>
   <p>
-    In 2020, Clément revived the project and decided to produce a first album, Consumer. The album
-    is released in 2021 and marks an evolution in the style of the band which becomes more epic,
-    melodic and modern. Death, Amon Amarth, Windir, Dissection or Behemoth are clearly influences
-    you can find in it. “Consumer” deals with the suffering humanity inflicts to its own individuals
-    as well as the destruction that it causes on the planet. Conformism, impact of the others’ look
-    on our actions and words, the collapse of our modern societies or the thirst of control of
-    humanity on its environment are the main lyrical themes addressed. The one-mand-band becomes a
-    full band thanks to the addition of Antoine (Sunnudagr) on guitar, MAD (Just call me MAD) on
-    drums and Lunel (Bøl) on bass. The band then performs live alongside groups such as The Great
-    Old Ones, Noctem, ANZV, Ad Patres or Ondfødt.
+    In 2020, Clément revived the project and decided to produce a first album, "<b>Consumer</b>".
+    The album is released in 2021 and marks an evolution in the style of the band which becomes more
+    epic, melodic and modern. Death, Amon Amarth, Windir, Dissection or Behemoth are clearly
+    influences you can find in it. “Consumer” deals with the suffering humanity inflicts to its own
+    individuals as well as the destruction that it causes on the planet. Conformism, impact of the
+    others’ look on our actions and words, the collapse of our modern societies or the thirst of
+    control of humanity on its environment are the main lyrical themes addressed. The one-mand-band
+    becomes a full band thanks to the addition of Antoine (Sunnudagr) on guitar, MAD (<ExternalLink
+      href="https://www.youtube.com/channel/UC9nfKpbO7p15MnNfkmiaUqw"
+      >Just call me MAD</ExternalLink
+    >) on drums and Lunel (Bøl) on bass. The band then performs live alongside groups such as The
+    Great Old Ones, Noctem, ANZV, Ad Patres or Ondfødt.
   </p>
-  <p>In 2024, a double single, “L’Absolution”, is released on streaming platforms.</p>
+  <p>In 2024, a double single, “<b>L’Absolution</b>”, is released on streaming platforms.</p>
 
   <Divider />
 
