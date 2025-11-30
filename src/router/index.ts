@@ -2,6 +2,7 @@ import ContactView from '@/views/ContactView.vue'
 import DiscographyView from '@/views/discography/DiscographyView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import HomeView from '@/views/HomeView.vue'
+import LinksView from '@/views/LinksView.vue'
 import ShowsView from '@/views/shows/ShowsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -46,6 +47,14 @@ const router = createRouter({
       component: ContactView,
       meta: {
         title: 'Contact',
+      },
+    },
+    {
+      path: '/links',
+      name: 'Links',
+      component: LinksView,
+      meta: {
+        title: 'Links',
       },
     },
   ],

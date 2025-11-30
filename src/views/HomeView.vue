@@ -131,7 +131,6 @@ import { Card, Divider, Image } from 'primevue'
 .line-up {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
   row-gap: 0.5rem;

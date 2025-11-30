@@ -1,16 +1,6 @@
-:root {
-  --serif-font: 'Playfair Display', serif;
-  --sans-serif-font: 'Kedebideri', sans-serif;
-}
-
-.serif-font {
-  font-family: var(--serif-font);
-  letter-spacing: 0.15rem;
-}
-
-.sans-serif-font {
-  font-family: var(--sans-serif-font);
-}
+@import './caption.css';
+@import './colors.css';
+@import './text.css';
 
 body {
   font-family: var(--sans-serif-font);
@@ -34,15 +24,6 @@ body::before {
   filter: blur(4px) saturate(70%);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--serif-font);
-}
-
-p {
-  line-height: 1.6rem;
+ul {
+  list-style-type: none;
 }
