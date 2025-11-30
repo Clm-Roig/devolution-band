@@ -2,36 +2,22 @@
 import Menubar from 'primevue/menubar'
 import type { MenuItem } from 'primevue/menuitem'
 import ResponsiveImage from './ResponsiveImage.vue'
+import router from '@/router'
 
 interface CustomMenuItem extends MenuItem {
   isExternal?: boolean
 }
 
+const routes = router.getRoutes()
 const items: CustomMenuItem[] = [
-  {
-    label: 'Home',
-    to: '/',
-  },
-  {
-    label: 'Discography',
-    to: '/discography',
-  },
-  {
-    label: 'Shows',
-    to: '/shows',
-  },
+  ...routes.map((r) => ({
+    label: r.name?.toString(),
+    to: r.path,
+  })),
   {
     label: 'Store',
     url: 'https://devolution-band.bandcamp.com/',
     isExternal: true,
-  },
-  {
-    label: 'Gallery',
-    to: '/gallery',
-  },
-  {
-    label: 'Contact',
-    to: '/contact',
   },
 ]
 </script>
