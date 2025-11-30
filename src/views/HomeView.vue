@@ -28,12 +28,16 @@ import { Card, Divider, Image } from 'primevue'
       />
     </template>
     <template #content>
-      <p style="font-size: 1.4rem; margin: 0; text-align: center">
+      <p class="short-bio serif-font">
         Devolution is deeply committed to revealing the darkest abominations that humans inflict on
         their own brothers and sisters and on the natural world that shelters them. There’s no need
         to invent stories or fables, just open your eyes and contemplate the raw truth of the world
-        around us. The band combines the violence and intensity of death metal with the overwhelming
-        epicness of melodic black metal to create a dynamic, fiery and impetuous sound.
+        around us.
+      </p>
+      <br />
+      <p class="short-bio serif-font">
+        The band combines the violence and intensity of death metal with the overwhelming epicness
+        of melodic black metal to create a dynamic, fiery and impetuous sound.
       </p>
     </template>
   </Card>
@@ -101,6 +105,13 @@ import { Card, Divider, Image } from 'primevue'
 </template>
 
 <style scoped>
+.short-bio {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
 .video-wrapper {
   aspect-ratio: 16 / 9;
   width: 100%;
