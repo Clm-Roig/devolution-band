@@ -16,6 +16,7 @@ defineProps<{
         alt="Poster"
         width="350"
         preview
+        loading="lazy"
       />
     </div>
     <div class="show-info">
