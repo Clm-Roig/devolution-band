@@ -1,5 +1,4 @@
 @import './caption.css';
-@import './colors.css';
 @import './text.css';
 
 body {
@@ -21,7 +20,7 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1; /* Places the background behind the content */
-  filter: blur(4px) saturate(70%);
+  filter: blur(6px) saturate(70%);
 }
 
 ul {

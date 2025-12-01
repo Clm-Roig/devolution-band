@@ -1,6 +1,6 @@
 import ContactView from '@/views/ContactView.vue'
 import DiscographyView from '@/views/discography/DiscographyView.vue'
-import GalleryView from '@/views/GalleryView.vue'
+import GalleryView from '@/views/gallery/GalleryView.vue'
 import HomeView from '@/views/HomeView.vue'
 import LinksView from '@/views/LinksView.vue'
 import ShowsView from '@/views/shows/ShowsView.vue'

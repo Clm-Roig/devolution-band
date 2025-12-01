@@ -64,15 +64,14 @@ const platforms: Platform[] = [
 .platform {
   display: flex;
   justify-content: center;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
+  margin: 0.5rem 0rem;
   width: 150px;
-  border: 2px solid;
+  border-bottom: 4px solid;
   border-color: transparent;
-  border-radius: 0.25rem;
   transition: 0.2s all;
   &:hover {
-    border-color: var(--accent-500);
+    border-color: var(--p-accent-500);
     transform: scale(1.05);
   }
 }
