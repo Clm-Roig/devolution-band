@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import AppTopBar from './components/AppTopBar.vue'
 import ResponsiveImage from './components/ResponsiveImage.vue'
 

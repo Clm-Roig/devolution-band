@@ -39,7 +39,7 @@ const platforms: Platform[] = [
 
 <template>
   <ul class="platforms">
-    <li class="platform" v-for="platform in platforms" :key="platform.href">
+    <li v-for="platform in platforms" :key="platform.href" class="platform">
       <ExternalLink :href="platform.href">
         <ResponsiveImage
           class="platform-logo"
