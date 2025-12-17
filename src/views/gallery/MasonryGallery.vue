@@ -18,17 +18,11 @@ defineProps<{
 .masonry-container {
   column-count: 3;
   column-gap: 1rem;
-  padding: 1rem;
   @media (max-width: 960px) {
-    .masonry-container {
-      column-count: 2;
-    }
+    column-count: 2;
   }
-
   @media (max-width: 600px) {
-    .masonry-container {
-      column-count: 1;
-    }
+    column-count: 1;
   }
 }
 

@@ -41,9 +41,7 @@ const socialLinks = [
         width: 100%;
       "
     >
-      <div
-        style="background: rgba(0, 0, 0, 0.7); border-radius: 0.25rem; padding: 2rem; width: 100%"
-      >
+      <div class="content">
         <h1 v-if="!!pageTitle" style="text-align: center; margin-top: 0">{{ pageTitle }}</h1>
         <RouterView />
       </div>
@@ -69,6 +67,19 @@ const socialLinks = [
 </template>
 
 <style scoped>
+.content {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+  padding: 2rem;
+  width: 100%;
+  @media (max-width: 800px) {
+    padding: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
+}
+
 /* Assure que le layout prend toute la hauteur de la fenêtre */
 .layout-wrapper {
   display: flex;

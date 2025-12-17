@@ -42,7 +42,6 @@ defineProps<{
   & .show-day {
     font-weight: bold;
   }
-
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 0.25rem;
