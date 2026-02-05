@@ -15,14 +15,14 @@ const socialLinks = [
     url: 'https://devolution-band.bandcamp.com',
     img: 'bandcamp-logo.png',
   },
-  { name: 'Facebook', url: 'https://facebook.com/devolution.band.fr', icon: 'pi pi-facebook' },
-  { name: 'Instagram', url: 'https://instagram.com/devolution_band', icon: 'pi pi-instagram' },
+  { name: 'Facebook', url: 'https://facebook.com/devolution.band.fr', img: 'facebook-logo.png' },
+  { name: 'Instagram', url: 'https://instagram.com/devolution_band', img: 'instagram-logo.png' },
   {
     name: 'Deezer',
     url: 'https://www.deezer.com/artist/195404507',
     img: 'deezer-logo.png',
   },
-  { name: 'YouTube', url: 'https://www.youtube.com/@devolution-band', icon: 'pi pi-youtube' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@devolution-band', img: 'youtube-logo.png' },
 ]
 </script>
 
@@ -58,8 +58,16 @@ const socialLinks = [
           rel="noopener noreferrer"
           class="social-link"
         >
-          <i v-if="!!social.icon" :class="social.icon"></i>
-          <ResponsiveImage v-else :src="social.img" :width="socialIconSize" />
+          <div
+            class="social-link-mask"
+            :style="{
+              '--img': `url(${social.img})`,
+              width: socialIconSize,
+              height: socialIconSize,
+            }"
+          >
+            <ResponsiveImage :src="social.img" :width="socialIconSize" class="sr-only" />
+          </div>
         </a>
       </div>
     </footer>
@@ -109,19 +117,34 @@ main {
   align-items: center;
 }
 
-.social-link {
-  color: var(--text-color);
-  font-size: 1rem;
-  transition:
-    color 0.3s ease,
-    transform 0.2s ease;
-  & > i {
-    font-size: v-bind(socialIconSize);
-  }
+.social-link-mask {
+  background-color: white;
+  transition: background-color 0.3s ease;
+
+  mask-image: var(--img);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  -webkit-mask-image: var(--img);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.social-link:hover .social-link-mask {
+  background-color: var(--p-primary-color);
 }
 
 .social-link:hover {
-  color: var(--primary-color);
   transform: scale(1.1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 </style>

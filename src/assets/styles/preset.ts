@@ -2,8 +2,8 @@ import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
 
 const DevolutionPreset = definePreset(Aura, {
-  primitive: {
-    accent: {
+  semantic: {
+    primary: {
       50: '#f7e9e7',
       100: '#e8c5c1',
       200: '#d4928a',
@@ -21,17 +21,17 @@ const DevolutionPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           root: {
-            colorOne: '{accent.500}',
+            colorOne: '{primary.500}',
             colorTwo: 'white',
-            colorThree: '{accent.500}',
+            colorThree: '{primary.500}',
             colorFour: 'white',
           },
         },
         dark: {
           root: {
-            colorOne: '{accent.500}',
+            colorOne: '{primary.500}',
             colorTwo: 'white',
-            colorThree: '{accent.500}',
+            colorThree: '{primary.500}',
             colorFour: 'white',
           },
         },

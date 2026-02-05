@@ -71,7 +71,7 @@ const platforms: Platform[] = [
   border-color: transparent;
   transition: 0.2s all;
   &:hover {
-    border-color: var(--p-accent-500);
+    border-color: var(--p-primary-500);
     transform: scale(1.05);
   }
 }

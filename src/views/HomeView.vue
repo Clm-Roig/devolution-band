@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ExternalLink from '@/components/ExternalLink.vue'
 import ImageWithCaption from '@/components/ImageWithCaption.vue'
-import { Card, Divider, Image } from 'primevue'
+import { Button, Card, Divider, Image } from 'primevue'
 </script>
 
 <template>
@@ -57,6 +57,18 @@ import { Card, Divider, Image } from 'primevue'
 
   <Divider />
 
+  <div>
+    <Button
+      as="a"
+      label="Listen"
+      href="https://linktr.ee/devolution_band"
+      target="_blank"
+      rel="noopener"
+      size="large"
+      class="listen-button"
+    />
+  </div>
+
   <p>
     The project was born in 2015 when Clément (ex-Antropofago, ex-Opprobre, ex-Sunnudagr) decided to
     release a first old school demo,
@@ -65,6 +77,7 @@ import { Card, Divider, Image } from 'primevue'
     >. He then surrounded himself with Maelstrom (Sunnudagr, ex-Opprobre) on bass and Steeve on
     vocals.
   </p>
+
   <p>
     In 2020, Clément revived the project and decided to produce a first album, "<b>Consumer</b>".
     The album is released in 2021 and marks an evolution in the style of the band which becomes more
@@ -106,7 +119,7 @@ import { Card, Divider, Image } from 'primevue'
   >
   <Divider />
 
-  <p style="font-style: italic; margin-bottom: 0; text-align: center">Fuck fascists, fuck NSBM.</p>
+  <p style="font-size: 1.3rem; margin-bottom: 0; text-align: center">Fuck fascists, fuck NSBM.</p>
 </template>
 
 <style scoped>
@@ -140,5 +153,17 @@ import { Card, Divider, Image } from 'primevue'
       flex-basis: 100%;
     }
   }
+}
+
+.listen-button {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  height: 4rem;
+  margin: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 10rem;
 }
 </style>
