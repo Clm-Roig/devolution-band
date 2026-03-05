@@ -22,7 +22,7 @@ import { Button, Card, Divider, Image } from 'primevue'
     <template #header>
       <ImageWithCaption
         alt="Devolution on stage"
-        src="line-up2.jpg"
+        src="line-up.jpg"
         preview
         :caption="{ text: 'Picture by Melody Morana', href: 'https://melodymorana.fr' }"
       />
