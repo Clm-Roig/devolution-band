@@ -19,13 +19,6 @@ app.use(PrimeVue, {
       dark: true,
     },
   },
-  pt: {
-    progressspinner: {
-      root: {
-        style: 'color: yellow;',
-      },
-    },
-  },
 })
 
 app.mount('#app')

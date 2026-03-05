@@ -1,5 +1,5 @@
 export interface Show {
-  id: string
+  id: number
   date: string
   day: string
   year: string
@@ -12,7 +12,17 @@ export interface Show {
 export const showsByYear: Record<string, Show[]> = {
   '2025': [
     {
-      id: '1',
+      id: 20,
+      date: '2025-11-14',
+      day: 'November 14th',
+      year: '2025',
+      venue: 'La Mécanique des Fluides',
+      city: 'Toulouse (FR)',
+      withBands: ['Haedeth'],
+      posterUrl: 'show_posters/2025-11-14.jpg',
+    },
+    {
+      id: 19,
       date: '2025-10-22',
       day: 'October 22nd',
       year: '2025',
@@ -22,7 +32,17 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2025-10-22.jpg',
     },
     {
-      id: '2',
+      id: 18,
+      date: '2025-10-22',
+      day: 'October 22nd',
+      year: '2025',
+      venue: 'Secret Place',
+      city: 'Montpellier (FR)',
+      withBands: ['The Great Old Ones', 'Eternal Hunt'],
+      posterUrl: 'show_posters/2025-10-22.jpg',
+    },
+    {
+      id: 17,
       date: '2025-05-23',
       day: 'May 23rd',
       year: '2025',
@@ -32,7 +52,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2025-05-23.jpg',
     },
     {
-      id: '3',
+      id: 16,
       date: '2025-05-22',
       day: 'May 22nd',
       year: '2025',
@@ -42,7 +62,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2025-05-22.jpg',
     },
     {
-      id: '4',
+      id: 15,
       date: '2025-04-26',
       day: 'April 26th',
       year: '2025',
@@ -52,7 +72,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2025-04-26.jpg',
     },
     {
-      id: '5',
+      id: 14,
       date: '2025-04-18',
       day: 'April 18th',
       year: '2025',
@@ -62,7 +82,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2025-04-18.jpg',
     },
     {
-      id: '6',
+      id: 13,
       date: '2025-02-01',
       day: 'February 1st',
       year: '2025',
@@ -74,7 +94,7 @@ export const showsByYear: Record<string, Show[]> = {
   ],
   '2024': [
     {
-      id: '7',
+      id: 12,
       date: '2024-10-03',
       day: 'October 3rd',
       year: '2024',
@@ -84,7 +104,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2024-10-03.jpg',
     },
     {
-      id: '8',
+      id: 11,
       date: '2024-04-14',
       day: 'April 14th',
       year: '2024',
@@ -94,7 +114,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2024-04-14.jpg',
     },
     {
-      id: '9',
+      id: 10,
       date: '2024-03-16',
       day: 'March 16th',
       year: '2024',
@@ -106,7 +126,7 @@ export const showsByYear: Record<string, Show[]> = {
   ],
   '2023': [
     {
-      id: '10',
+      id: 9,
       date: '2023-12-01',
       day: 'December 1st',
       year: '2023',
@@ -116,7 +136,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-12-01.jpg',
     },
     {
-      id: '11',
+      id: 8,
       date: '2023-05-26',
       day: 'May 26th',
       year: '2023',
@@ -126,7 +146,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-05-26.jpg',
     },
     {
-      id: '12',
+      id: 7,
       date: '2023-04-01',
       day: 'April 1st',
       year: '2023',
@@ -136,7 +156,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-04-01.jpg',
     },
     {
-      id: '13',
+      id: 6,
       date: '2023-03-31',
       day: 'March 31st',
       year: '2023',
@@ -146,7 +166,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-03-31.jpg',
     },
     {
-      id: '14',
+      id: 5,
       date: '2023-03-04',
       day: 'March 4th',
       year: '2023',
@@ -156,7 +176,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-03-04.jpg',
     },
     {
-      id: '15',
+      id: 4,
       date: '2023-01-27',
       day: 'January 27th',
       year: '2023',
@@ -166,7 +186,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2023-01-27.jpg',
     },
     {
-      id: '16',
+      id: 3,
       date: '2023-01-26',
       day: 'January 26th',
       year: '2023',
@@ -178,7 +198,7 @@ export const showsByYear: Record<string, Show[]> = {
   ],
   '2022': [
     {
-      id: '17',
+      id: 2,
       date: '2022-06-25',
       day: 'June 25th',
       year: '2022',
@@ -188,7 +208,7 @@ export const showsByYear: Record<string, Show[]> = {
       posterUrl: 'show_posters/2022-06-25.jpg',
     },
     {
-      id: '18',
+      id: 1,
       date: '2022-06-10',
       day: 'June 10th',
       year: '2022',
