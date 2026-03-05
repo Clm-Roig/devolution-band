@@ -12,7 +12,7 @@ export interface Show {
 export const showsByYear: Record<string, Show[]> = {
   '2025': [
     {
-      id: 20,
+      id: 19,
       date: '2025-11-14',
       day: 'November 14th',
       year: '2025',
@@ -20,16 +20,6 @@ export const showsByYear: Record<string, Show[]> = {
       city: 'Toulouse (FR)',
       withBands: ['Haedeth'],
       posterUrl: 'show_posters/2025-11-14.jpg',
-    },
-    {
-      id: 19,
-      date: '2025-10-22',
-      day: 'October 22nd',
-      year: '2025',
-      venue: 'Secret Place',
-      city: 'Montpellier (FR)',
-      withBands: ['The Great Old Ones', 'Eternal Hunt'],
-      posterUrl: 'show_posters/2025-10-22.jpg',
     },
     {
       id: 18,
