@@ -12,5 +12,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/devolution-band', // use for Github page deployment
+  // base: '/devolution-band', // if using a Github Page without a domain name
+  base: '/',
 })
