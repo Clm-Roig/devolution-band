@@ -1,5 +1,6 @@
 import ContactView from '@/views/ContactView.vue'
 import DiscographyView from '@/views/discography/DiscographyView.vue'
+import DownloadView from '@/views/download/DownloadView.vue'
 import GalleryView from '@/views/gallery/GalleryView.vue'
 import HomeView from '@/views/HomeView.vue'
 import LinksView from '@/views/LinksView.vue'
@@ -55,6 +56,14 @@ const router = createRouter({
       component: LinksView,
       meta: {
         title: 'Links',
+      },
+    },
+    {
+      path: '/download',
+      name: 'Download',
+      component: DownloadView,
+      meta: {
+        title: 'Download',
       },
     },
   ],

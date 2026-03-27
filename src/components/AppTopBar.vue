@@ -50,13 +50,12 @@ const items: CustomMenuItem[] = [
         :to="item.to"
         custom
       >
-        <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+        <a :href="href" v-bind="props.action" @click="navigate">
           <span class="serif-font">{{ item.label }}</span>
         </a>
       </router-link>
       <a
         v-else
-        v-ripple
         :href="item.url"
         :target="item.isExternal ? '_blank' : undefined"
         v-bind="props.action"
@@ -72,5 +71,12 @@ const items: CustomMenuItem[] = [
   max-width: 250px;
   height: auto;
   display: block;
+}
+
+a:hover {
+  color: inherit;
+}
+.p-menubar-item-content:hover {
+  background: yellow;
 }
 </style>

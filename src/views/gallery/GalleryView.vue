@@ -14,7 +14,10 @@ const doesImageExist = (url: string) => {
     const img = new Image()
     img.src = url
     img.onload = () => resolve(true)
-    img.onerror = () => resolve(false)
+    img.onerror = () => {
+      console.warn(`Image at ${url} doesn't exist!`)
+      resolve(false)
+    }
   })
 }
 
@@ -26,17 +29,16 @@ onMounted(async () => {
   // TODO: update this number when there are more images
   const maxImagesToCheck = 20
   const imageCheckPromises: Promise<{ index: number; exists: boolean }>[] = []
-
   for (let i = 1; i <= maxImagesToCheck; i++) {
     imageCheckPromises.push(
-      doesImageExist(`${base}/gallery/${i}.jpg`).then((exists) => ({ index: i, exists })),
+      doesImageExist(`${base}gallery/${i}.jpg`).then((exists) => ({ index: i, exists })),
     )
   }
   const results = await Promise.all(imageCheckPromises)
   const images: string[] = []
   for (const result of results) {
     if (result.exists) {
-      images.push(`${base}/gallery/${result.index}.jpg`)
+      images.push(`${base}gallery/${result.index}.jpg`)
     } else {
       break
     }

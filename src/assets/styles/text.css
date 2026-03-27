@@ -29,3 +29,12 @@ p {
   line-height: 1.6rem;
   font-family: var(--sans-serif-font);
 }
+
+a {
+  color: var(--p-primary-200);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--p-primary-100);
+}
