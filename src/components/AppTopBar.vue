@@ -19,7 +19,7 @@ const items: CustomMenuItem[] = [
     url: 'https://devolution-band.bandcamp.com/',
     isExternal: true,
   },
-]
+].sort((l1) => (l1.label === 'Contact' ? 1 : -1)) // put Contact link at the end
 </script>
 
 <template>
