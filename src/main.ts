@@ -15,9 +15,7 @@ app.use(router)
 app.use(PrimeVue, {
   theme: {
     preset: DevolutionPreset,
-    options: {
-      darkModeSelector: 'html', // dark mode always on
-    }
+    options: {}
   },
 })
 
