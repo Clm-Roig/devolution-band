@@ -16,7 +16,7 @@ app.use(PrimeVue, {
   theme: {
     preset: DevolutionPreset,
     options: {
-      darkModeSelector: "darkmode"
+      darkModeSelector: ".darkmode"
     },
   },
 })
