@@ -21,9 +21,9 @@ const items: CustomMenuItem[] = [
   },
 ].sort((l1, l2) => {
   // put Contact link at the end
-  if (l1.label === 'Contact') return 1
-  if (l2.label === 'Contact') return -1
-  return 0
+  if (l1.label === 'Contact') return 1;
+  if (l2.label === 'Contact') return -1;
+  return 0;
 });
 </script>
 
