@@ -16,7 +16,7 @@ app.use(PrimeVue, {
   theme: {
     preset: DevolutionPreset,
     options: {
-      darkModeSelector: 'none', // light mode always on
+      darkModeSelector: 'html', // dark mode always on
     }
   },
 })
