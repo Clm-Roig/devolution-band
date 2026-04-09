@@ -1,6 +1,10 @@
 @import './caption.css';
 @import './text.css';
 
+:root {
+  color-scheme: dark;
+}
+
 body {
   font-family: var(--sans-serif-font);
   min-height: 100vh;
