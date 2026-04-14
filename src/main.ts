@@ -1,5 +1,6 @@
 import 'normalize.css'
 import 'primeicons/primeicons.css'
+import 'flag-icons/css/flag-icons.min.css'
 
 import { createApp } from 'vue'
 import PrimeVue from 'primevue/config'
@@ -16,7 +17,7 @@ app.use(PrimeVue, {
   theme: {
     preset: DevolutionPreset,
     options: {
-      darkModeSelector: ".darkmode"
+      darkModeSelector: '.darkmode',
     },
   },
 })

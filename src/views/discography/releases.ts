@@ -10,6 +10,13 @@ export interface Release {
   year: number
   releaseInfo: string
   tracks: Track[]
+  reviews?: {
+    webzineName: string
+    link: string
+    rating?: string
+    quote: string
+    language: string
+  }[]
   credits: {
     label: string
     content: string
@@ -136,6 +143,81 @@ Hear the voices of devastation`,
     coverImage: 'consumer_cover.jpg',
     year: 2021,
     releaseInfo: 'Self-released',
+    reviews: [
+      {
+        webzineName: 'Acta Infernalis',
+        link: 'https://actainfernalis.com/2021/07/18/review-744-devolution-consumer-english/',
+        rating: '90/100',
+        quote: `Consumer unveils solid riffs, airy leads, catchy patterns and bestial howlings, while adding more majestic parts, creating an extreme contrast we like to listen to.`,
+        language: 'en',
+      },
+      {
+        webzineName: 'Brutalism',
+        link: 'https://brutalism.com/review/devolution-consumer',
+        rating: '3,5/5',
+        quote: `Unknown band but undoubtedly supporter of a good job. If you love the sounds of bands like Dissection, Amon Amarth and similar, you might find this work interesting.`,
+        language: 'en',
+      },
+      {
+        webzineName: 'Metal Archives',
+        link: 'https://www.metal-archives.com/reviews/Devolution/Consumer/959408/Edmund_Sackbauer/402292',
+        rating: '91%',
+        quote: `Effortlessly combining simplicity with stellar musicianship and good songwriting is what sets Devolution apart from most of their peers, which is especially impressive taking into consideration that we are talking about a debut effort. The production is fantastic, very dynamic and powerful.`,
+        language: 'en',
+      },
+      {
+        webzineName: 'Wonderbox Metal',
+        link: 'https://www.metal-archives.com/reviews/Devolution/Consumer/959408/Edmund_Sackbauer/402292',
+        quote: `This one's a keeper indeed. Very highly recommended.`,
+        language: 'en',
+      },
+      {
+        webzineName: 'Ahasverus',
+        link: 'http://www.ahasverus.fr/blog/chronique-d-album-devolution-black-death-consumer-2021.html',
+        quote: `Le résultat tient la route (des enfers), de l'artwork à la prod'. Il a de quoi nourrir la curiosité des fans de black/death, auxquels « Consumer » est clairement destiné. A découvrir.`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'Blastphème',
+        link: 'http://www.ahasverus.fr/blog/chronique-d-album-devolution-black-death-consumer-2021.html#.YQjypzOB89g.facebook',
+        quote: `Un Metal extrême à base de Death recouvert de sonorités Black, pour une musique unique, une inspiration débordante et inspirante.`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'Eklektik Rock',
+        link: 'https://www.eklektik-rock.com/2021/07/devolution-consumer/',
+        quote: `Devolution signe là un remarquable début qui devrait convaincre les amateurs de death alambiqué qui sait rester mélodique.`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'La Horde Noire',
+        link: 'http://www.lahordenoire-metal.com/chronique/devolution/consumer.html',
+        rating: '7,5/10',
+        quote: `Ne redoute pas d'accoupler technicité alambiquée et dramaturgie obscure dans le creuset de mélodies à la fois acérées et lumineuses, traditionnelles et modernes.`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'Metalnews',
+        link: 'http://www.metalnews.fr/chroniques/consumer',
+        rating: '80/100',
+        quote: `Du brutal intelligent qui bouffe à tous les râteliers pour proposer sa propre sauce. On retrouve donc au menu de Consumer ce que consomment les vrais de vrais, des accélérations Death fulgurantes, des blasts ravageurs, des riffs qui s'empilent comme les cadavres dans une fosse commune, des cassures qui brisent les cervicales, mais aussi des mélodies maladives qui empoisonnent le tout, et le rendent encore plus létal.`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'Soil Chronicles',
+        link: 'http://www.metalnews.fr/chroniques/consumer',
+        rating: '7/10',
+        quote: `Bonnes alternances de rythmiques et un riffing varié par compositions sans qu'on est l'impression de copier coller. Il y a donc un bon boulot d'écriture et ça s'entend à chaque instant. Tout cela est plus que prometteur !`,
+        language: 'fr',
+      },
+      {
+        webzineName: 'World of Metal',
+        link: 'https://worldofmetalmag.com/wom-reviews-carcass-hexorcist-devolution-lvcifyre-enforce-edenic-past-wrath-division-hexitium/',
+        rating: '8,5/10',
+        quote: `Mais uma estreia bombástica no reino do death/black metal. Os Devolution chegam-nos de França e vêm com a ganga toda.`,
+        language: 'pt',
+      },
+    ],
     tracks: [
       {
         title: 'Aux Portes du Vide',

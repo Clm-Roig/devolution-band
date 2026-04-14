@@ -49,6 +49,8 @@ const platforms: Platform[] = [
       </ExternalLink>
     </li>
   </ul>
+
+  <p>No X, no Spotify: fuck fascists.</p>
 </template>
 
 <style scoped>
